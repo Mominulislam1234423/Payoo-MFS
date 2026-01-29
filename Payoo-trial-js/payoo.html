@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo-MFS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="flex justify-center h-auto">
+        <div class="mockup-phone text-black bg-base-200 grid place-content-center flex itmes-center text-center">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display ">
+                <!-- blance section -->
+                <div>
+                    <div class="stats shadow">
+                        <div class="stat">
+                            <div id="Blance" class="stat-value">89400</div>
+                            <div class="stat-desc">Available Blance</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- add blance button -->
+                    <div>
+                        <button id="add-maney-btn" class="btn btn-xl bg-white">Add Maney</button>
+                        <button id="add-cash-out-btn" class="btn btn-xl bg-white">Cash out</button>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- add many from section-->
+                    <div id="add-maney-from" class="">
+                        <div class="hero ">
+                            <div class="hero-content flex-col">
+                                <div class="card bg-base-100 w-full text-left ">
+                                    <div class="card-body">
+                                        <div>
+                                            <h1 class="text-black font-bold">Ammount</h1>
+                                            <input id="add-ammount" class="text-blac" type="text" placeholder="Ammount"
+                                                autocomplete="off" required />
+                                        </div>
+                                        <div>
+                                            <h1 class="text-black font-bold">Pin</h1>
+                                            <input class="text-black" id="add-pin" type="password"
+                                                placeholder="Pin" /><br>
+
+                                        </div>
+                                        <button id="btn-maney-add" class="btn btn-neutral mt-4">Add Maney</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- add cash out from section-->
+                    <div id="cash-out-from" class="hidden">
+                        <div class="hero">
+                            <div class="hero-content flex-col">
+                                <div class="card bg-base-100 w-full text-left ">
+                                    <div class="card-body">
+                                        <div>
+                                            <h1 class="text-black font-bold">Ammount</h1>
+                                            <input id="cash-out" class="text-blac" type="text" placeholder="Ammount"
+                                                autocomplete="off" required />
+                                        </div>
+                                        <div>
+                                            <h1 class="text-black font-bold">Pin</h1>
+                                            <input class="text-black" id="add-pin-num" type="password"
+                                                placeholder="Pin" /><br>
+
+                                        </div>
+                                        <button id="add-button" class="btn btn-neutral mt-4">Cash out</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="home.js"></script>
+    <script src="features.js"></script>
+</body>
+
+</html>
