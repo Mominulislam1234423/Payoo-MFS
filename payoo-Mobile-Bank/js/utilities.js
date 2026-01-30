@@ -20,3 +20,10 @@ function getTextFieldValueById(id) {
     return textNumber;
 }
 
+function shawFromById(id){
+    document.getElementById('add-maney-from').classList.add('hidden')
+    document.getElementById('cash-out-from').classList.add('hidden')
+    document.getElementById('Transaction-section').classList.add('hidden')
+
+    document.getElementById(id).classList.remove('hidden')
+}
